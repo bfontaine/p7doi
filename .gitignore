@@ -1,3 +1,13 @@
+.coverage
 *~
 .*.sw*
-.DS_Store
+*.dSYM
+*.pyc
+*.zip
+*.egg-info
+__pycache__
+/venv
+/dist
+htmlcov
+MANIFEST
+.tox
