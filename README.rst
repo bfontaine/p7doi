@@ -39,7 +39,16 @@ Usage
 
     p7doi <doi>
 
-It’ll open the article in your default web browser.
+It’ll open the article in your default web browser. Note that you might need to
+put the DOI between quotes if it contains characters that could be interpreted
+by your shell (e.g. parentheses).
+
+Example
+~~~~~~~
+
+.. code-block::
+
+    p7doi 10.1126/science.298.5594.824
 
 Tests
 -----
