@@ -17,11 +17,11 @@ p7doi
 .. image:: https://img.shields.io/pypi/dm/p7doi.png
    :target: https://pypi.python.org/pypi/p7doi
 
-**p7doi** is a tool for `Paris 7`_ students who read research paper outside the
+**p7doi** is a tool for `Paris 7`_ students who read research papers outside the
 university. A lot of them are behind a paywall, which can be bypassed by using
 the university’s proxy because it’s subscribed to a bunch of these websites.
 
-Note: you’ll need to login with your student’s credentials when asked to.
+Note: you’ll need to login with your student credentials when asked to.
 
 .. _Paris 7: http://www.univ-paris-diderot.fr/english/sc/site.php?bc=accueil&np=accueil&g=m/
 
