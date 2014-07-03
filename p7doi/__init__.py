@@ -37,7 +37,7 @@ def cli():
     """
     if len(sys.argv) < 2:
         print('Usage: %s <doi>' % sys.argv[0])
-        sys.exit(1)
+        return sys.exit(1)
 
     doi = sys.argv[1]
 
@@ -46,7 +46,7 @@ def cli():
             print('p7doi v%s' % __version__)
         else:
             print("Unrecognized option: '%s'" % doi)
-            sys.exit(1)
-        sys.exit(0)
+            return sys.exit(1)
+        return sys.exit(0)
 
     open_doi(doi)
