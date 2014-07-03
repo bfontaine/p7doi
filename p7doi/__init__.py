@@ -36,16 +36,16 @@ def cli():
     CLI endpoint
     """
     if len(sys.argv) < 2:
-        print('Usage: %s <doi>' % sys.argv[0])
+        print(u'Usage: %s <doi>' % sys.argv[0])
         return sys.exit(1)
 
     doi = sys.argv[1]
 
     if doi.startswith('-'):
         if doi in ['-v', '-version', '--version']:
-            print('p7doi v%s' % __version__)
+            print(u'p7doi v%s' % __version__)
         else:
-            print("Unrecognized option: '%s'" % doi)
+            print(u"Unrecognized option: '%s'" % doi)
             return sys.exit(1)
         return sys.exit(0)
 
