@@ -43,6 +43,10 @@ It’ll open the article in your default web browser. Note that you might need t
 put the DOI between quotes if it contains characters that could be interpreted
 by your shell (e.g. parentheses).
 
+You can also use it from `the web`_.
+
+.. _the web: https://bfontaine.github.io/p7doi/
+
 Example
 ~~~~~~~
 
