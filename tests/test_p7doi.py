@@ -45,20 +45,6 @@ class TestP7doi(unittest.TestCase):
     def test_version(self):
         self.assertRegexpMatches(p7doi.__version__, r'^\d+\.\d+\.\d+')
 
-    # make_doi_url
-
-    def test_make_doi_url(self):
-        self.assertEquals(
-            'http://rproxy.sc.univ-paris-diderot.fr/login?url=http://dx.doi.org/10xyz/42.12',
-            p7doi.make_doi_url('10xyz/42.12'))
-
-    # open_url
-
-    def test_open_url(self):
-        url = 'http://example.com?some=pa&ra=meter'
-        p7doi.open_url(url)
-        self.assertSequenceEqual([url], self.wb_args)
-
     # open_doi
 
     def test_open_doi(self):

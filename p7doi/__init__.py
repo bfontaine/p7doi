@@ -10,25 +10,11 @@ DOI_URL = 'http://rproxy.sc.univ-paris-diderot.fr/login' + \
     '?url=http://dx.doi.org/%s'
 
 
-def make_doi_url(doi):
-    """
-    Return an URL for the given DOI
-    """
-    return DOI_URL % doi
-
-
-def open_url(url):
-    """
-    Open an URL in the default browser, in a new tab if possible
-    """
-    webbrowser.open_new_tab(url)
-
-
 def open_doi(doi):
     """
     Open the URL for the given DOI in the default browser
     """
-    open_url(make_doi_url(doi))
+    webbrowser.open_new_tab(DOI_URL % doi)
 
 
 def cli():
